@@ -6,7 +6,7 @@ Config.LicenseRank = 2
 Config.ArmoryWhitelist = {}
 Config.WhitelistedVehicles = {}
 Config.PoliceHelicopter = 'POLMAV'
-Config.FuelResource = 'LegacyFuel' -- supports any that has a GetFuel() and SetFuel() export
+Config.FuelResource = 'LegacyFuel'
 
 Config.AmmoLabels = {
     AMMO_PISTOL = '9x19mm parabellum bullet',
@@ -101,10 +101,10 @@ Config.SecurityCameras = {
         [32] = { label = 'Vangelico Jewelery CAM#2', coords = vector3(-627.51, -229.51, 40.24), r = { x = -35.0, y = 0.0, z = -95.78 }, canRotate = true, isOnline = true },
         [33] = { label = 'Vangelico Jewelery CAM#3', coords = vector3(-620.3, -224.31, 40.23), r = { x = -35.0, y = 0.0, z = 165.78 }, canRotate = true, isOnline = true },
         [34] = { label = 'Vangelico Jewelery CAM#4', coords = vector3(-622.57, -236.3, 40.31), r = { x = -35.0, y = 0.0, z = 5.78 }, canRotate = true, isOnline = true },
-    },
+    }
 }
 
-Config.EnableRadars = true -- alerts for flagged plates
+Config.EnableRadars = true
 Config.Radars = {
     vector3(1051.42, 331.11, 84.00),
     vector3(544.43, -373.24, 33.14),
@@ -118,13 +118,12 @@ Config.Radars = {
 }
 
 Config.CarItems = {
-    [1] = { name = 'heavyarmor', amount = 2, info = {}, type = 'item', slot = 1, },
-    [2] = { name = 'empty_evidence_bag', amount = 10, info = {}, type = 'item', slot = 2, },
-    [3] = { name = 'police_stormram', amount = 1, info = {}, type = 'item', slot = 3, },
+    [1] = { name = 'heavyarmor', amount = 2, info = {}, type = 'item', slot = 1 },
+    [2] = { name = 'empty_evidence_bag', amount = 10, info = {}, type = 'item', slot = 2 },
+    [3] = { name = 'police_stormram', amount = 1, info = {}, type = 'item', slot = 3 },
 }
 
 Config.AuthorizedVehicles = {
-    -- Grade 0 and higher
     [0] = {
         police = 'Police Car 1',
         police2 = 'Police Car 2',
@@ -134,43 +133,23 @@ Config.AuthorizedVehicles = {
         policet = 'Police Car 6',
         sheriff = 'Sheriff Car 1',
         sheriff2 = 'Sheriff Car 2',
-    },
+    }
 }
 
 Config.VehicleSettings = {
-    ['car1'] = {          --- Model name
+    ['car1'] = {
         ['extras'] = {
-            ['1'] = true, -- on/off
-            ['2'] = true,
-            ['3'] = true,
-            ['4'] = true,
-            ['5'] = true,
-            ['6'] = true,
-            ['7'] = true,
-            ['8'] = true,
-            ['9'] = true,
-            ['10'] = true,
-            ['11'] = true,
-            ['12'] = true,
-            ['13'] = true,
+            ['1'] = true, ['2'] = true, ['3'] = true, ['4'] = true, ['5'] = true,
+            ['6'] = true, ['7'] = true, ['8'] = true, ['9'] = true, ['10'] = true,
+            ['11'] = true, ['12'] = true, ['13'] = true,
         },
         ['livery'] = 1,
     },
     ['car2'] = {
         ['extras'] = {
-            ['1'] = true,
-            ['2'] = true,
-            ['3'] = true,
-            ['4'] = true,
-            ['5'] = true,
-            ['6'] = true,
-            ['7'] = true,
-            ['8'] = true,
-            ['9'] = true,
-            ['10'] = true,
-            ['11'] = true,
-            ['12'] = true,
-            ['13'] = true,
+            ['1'] = true, ['2'] = true, ['3'] = true, ['4'] = true, ['5'] = true,
+            ['6'] = true, ['7'] = true, ['8'] = true, ['9'] = true, ['10'] = true,
+            ['11'] = true, ['12'] = true, ['13'] = true,
         },
         ['livery'] = 1,
     }
